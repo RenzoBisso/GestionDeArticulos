@@ -1,0 +1,6 @@
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Modelos\bin\Debug\Modelos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Modelos\bin\Debug\Modelos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Modelos\obj\Debug\Modelos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Modelos\obj\Debug\Modelos.pdb

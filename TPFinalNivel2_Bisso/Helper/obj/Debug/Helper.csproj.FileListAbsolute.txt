@@ -1,0 +1,11 @@
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\bin\Debug\Helper.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\bin\Debug\Helper.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\bin\Debug\Modelos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\bin\Debug\Modelos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\obj\Debug\Helper.csproj.Up2Date
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\obj\Debug\Helper.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\obj\Debug\Helper.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\bin\Debug\Base de datos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Helper\bin\Debug\Base de datos.pdb

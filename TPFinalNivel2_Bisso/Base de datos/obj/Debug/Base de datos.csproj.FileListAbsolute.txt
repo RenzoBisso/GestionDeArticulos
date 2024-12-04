@@ -1,0 +1,11 @@
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\bin\Debug\Base de datos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\bin\Debug\Base de datos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\bin\Debug\Modelos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\bin\Debug\Modelos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\obj\Debug\Base de datos.csproj.AssemblyReference.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\obj\Debug\Base de datos.csproj.CoreCompileInputs.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\obj\Debug\Base de .84A47760.Up2Date
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\obj\Debug\Base de datos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Base de datos\obj\Debug\Base de datos.pdb

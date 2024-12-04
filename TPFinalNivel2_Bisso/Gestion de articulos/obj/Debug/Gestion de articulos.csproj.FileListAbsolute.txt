@@ -1,0 +1,20 @@
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Gestion de articulos.exe.config
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Gestion de articulos.exe
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Gestion de articulos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Base de datos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Modelos.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Base de datos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Modelos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion de articulos.csproj.AssemblyReference.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion_de_articulos.Catalogo.resources
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion_de_articulos.formDetalle.resources
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion_de_articulos.Properties.Resources.resources
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion de articulos.csproj.GenerateResource.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion de articulos.csproj.CoreCompileInputs.cache
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion .F645F3E0.Up2Date
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion de articulos.exe
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion de articulos.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Helper.dll
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\bin\Debug\Helper.pdb
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion_de_articulos.Agregar.resources
+C:\Users\renzo\Documents\GitHub\GestionDeArticulos\TPFinalNivel2_Bisso\Gestion de articulos\obj\Debug\Gestion_de_articulos.Modificar.resources
