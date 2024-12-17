@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 using System.Configuration;
 using Modelos;
 using System.Data.SqlTypes;
 using System.Globalization;
+
 
 
 namespace Base_de_datos
@@ -92,25 +94,109 @@ namespace Base_de_datos
             while (conexion.Lector.Read())
             {
                 Articulo articulo = new Articulo();
-                articulo.Marca =new Marca();
+                articulo.Marca = new Marca();
                 articulo.Id = (int)conexion.Lector["Id"];
-                articulo.Marca.IdMarca = (int)conexion.Lector["IdMarca"];
-                articulo.Marca.DescripcionMarca = (string)conexion.Lector["MarcaDescripcion"];
-                articulo.Categoria =new Categoria();
-                articulo.Categoria.IdCategoria = (int)conexion.Lector["IdCategoria"];
-                articulo.Categoria.DescripcionCategoria = (string)conexion.Lector["CategoriaDescripcion"];
-                articulo.Nombre =(string)conexion.Lector["Nombre"];
-                articulo.CodigoArticulo = (string)conexion.Lector["Codigo"];
-                articulo.Descripcion = (string)conexion.Lector["ArticuloDescripcion"];
-                articulo.UrlImagen = (string)conexion.Lector["ImagenUrl"];
-                articulo.Precio = (decimal)conexion.Lector["Precio"];
+                if (!(conexion.Lector["IdMarca"] is DBNull))
+                    articulo.Marca.IdMarca = (int)conexion.Lector["IdMarca"];
+                if (!(conexion.Lector["MarcaDescripcion"] is DBNull))
+                    articulo.Marca.DescripcionMarca = (string)conexion.Lector["MarcaDescripcion"];
+                articulo.Categoria = new Categoria();
+                if (!(conexion.Lector["IdCategoria"] is DBNull))
+                    articulo.Categoria.IdCategoria = (int)conexion.Lector["IdCategoria"];
+                if (!(conexion.Lector["CategoriaDescripcion"] is DBNull))
+                    articulo.Categoria.DescripcionCategoria = (string)conexion.Lector["CategoriaDescripcion"];
+                if (!(conexion.Lector["Nombre"] is DBNull))
+                    articulo.Nombre = (string)conexion.Lector["Nombre"];
+                if (!(conexion.Lector["Codigo"] is DBNull))
+                    articulo.CodigoArticulo = (string)conexion.Lector["Codigo"];
+                if (!(conexion.Lector["ArticuloDescripcion"] is DBNull))
+                    articulo.Descripcion = (string)conexion.Lector["ArticuloDescripcion"];
+                if (!(conexion.Lector["ImagenUrl"] is DBNull))
+                    articulo.UrlImagen = (string)conexion.Lector["ImagenUrl"];
+                if (!(conexion.Lector["Precio"] is DBNull))
+                    articulo.Precio = (decimal)conexion.Lector["Precio"];
+                
+                lista.Add(articulo);
+                }
+
+                conexion.cerrarConexion();
+            return lista;
+        }
+
+        public List<Articulo> ListarArticulos(string columna,string criterio)
+        {
+            List<Articulo>lista=new List<Articulo>();
+            Conexion conexion = new Conexion();
+            // Define las columnas válidas y sus correspondientes alias
+            string aliasTabla = string.Empty;
+            string columnaFiltro = string.Empty;
+
+            // Asignar el alias y la columna a filtrar según la opción elegida
+            if (columna == "Categoria")
+            {
+                aliasTabla = "C";
+                columnaFiltro = "C.Descripcion";  // Columna para filtrar por categoría
+            }
+            else if (columna == "Marca")
+            {
+                aliasTabla = "M";
+                columnaFiltro = "M.Descripcion";  // Columna para filtrar por marca
+            }
+            else if (columna == "Codigo")
+            {
+                aliasTabla = "A";
+                columnaFiltro = "A.Codigo";  // Columna para filtrar por código
+            }
+            else if (columna == "Nombre")
+            {
+                aliasTabla = "A";
+                columnaFiltro = "A.Nombre";  // Columna para filtrar por nombre
+            }
+
+            conexion.setQuery($"SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion AS ArticuloDescripcion, A.ImagenUrl, A.Precio, " +
+                   $"C.Descripcion AS CategoriaDescripcion, M.Descripcion AS MarcaDescripcion, A.IdMarca, A.IdCategoria " +
+                   $"FROM ARTICULOS AS A " +
+                   $"INNER JOIN CATEGORIAS AS C ON A.IdCategoria = C.Id " +
+                   $"INNER JOIN MARCAS AS M ON A.IdMarca = M.Id " +
+                   $"WHERE {columnaFiltro} LIKE @criterio;");
+
+            conexion.setParametro("@criterio", "%" + criterio + "%");
+            conexion.ejecutarLectura();
+
+            while (conexion.Lector.Read())
+            {
+
+                Articulo articulo = new Articulo();
+                articulo.Marca=new Marca();
+        
+                articulo.Id = (int)conexion.Lector["Id"];
+                if (!(conexion.Lector["IdMarca"] is DBNull))
+                    articulo.Marca.IdMarca = (int)conexion.Lector["IdMarca"];
+                if (!(conexion.Lector["MarcaDescripcion"] is DBNull))
+                    articulo.Marca.DescripcionMarca = (string)conexion.Lector["MarcaDescripcion"];
+                articulo.Categoria = new Categoria();
+                if (!(conexion.Lector["IdCategoria"] is DBNull))
+                    articulo.Categoria.IdCategoria = (int)conexion.Lector["IdCategoria"];
+                if (!(conexion.Lector["CategoriaDescripcion"] is DBNull))
+                    articulo.Categoria.DescripcionCategoria = (string)conexion.Lector["CategoriaDescripcion"];
+                if (!(conexion.Lector["Nombre"] is DBNull))
+                    articulo.Nombre = (string)conexion.Lector["Nombre"];
+                if (!(conexion.Lector["Codigo"] is DBNull))
+                    articulo.CodigoArticulo = (string)conexion.Lector["Codigo"];
+                if (!(conexion.Lector["ArticuloDescripcion"] is DBNull))
+                    articulo.Descripcion = (string)conexion.Lector["ArticuloDescripcion"];
+                if (!(conexion.Lector["ImagenUrl"] is DBNull))
+                    articulo.UrlImagen = (string)conexion.Lector["ImagenUrl"];
+                if (!(conexion.Lector["Precio"] is DBNull))
+                    articulo.Precio = (decimal)conexion.Lector["Precio"];
 
                 lista.Add(articulo);
             }
-
             conexion.cerrarConexion();
             return lista;
         }
+
+
 
         public void setParametro(string nombre, object valor)
         {

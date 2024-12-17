@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Helper;
+using System.Collections;
 
 namespace Gestion_de_articulos
 {
@@ -47,10 +48,13 @@ namespace Gestion_de_articulos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            Conexion conexion=new Conexion();
-            Articulo articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            conexion.EliminarArticulo(articulo);
-            Helper.Helper.CargarCatalogo(dgvArticulos);
+            if (MessageBox.Show("¿Estas seguro de eliminarlo?","Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Conexion conexion = new Conexion();
+                Articulo articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                conexion.EliminarArticulo(articulo);
+                Helper.Helper.CargarCatalogo(dgvArticulos);
+            }
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -67,5 +71,37 @@ namespace Gestion_de_articulos
             form.ShowDialog(this);
             Helper.Helper.CargarCatalogo(dgvArticulos);
         }
+
+        private void txtBoxCriterio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+            string filtro = string.Empty;
+
+            if (rbtnFiltrarPorCategoria.Checked)
+                filtro = rbtnFiltrarPorCategoria.Text; // Obtiene el texto del RadioButton seleccionado
+            else if (rbtnFiltrarPorCodigo.Checked)
+                filtro = rbtnFiltrarPorCodigo.Text;
+            else if (rbtnFiltrarPorMarca.Checked)
+                filtro = rbtnFiltrarPorMarca.Text;
+            else if (rbtnFiltrarPorNombre.Checked)
+                filtro = rbtnFiltrarPorNombre.Text;
+
+            if (!string.IsNullOrEmpty(filtro))
+            {
+                List<Articulo> lista = conexion.ListarArticulos(filtro, txtBoxCriterio.Text.ToString());
+                Helper.Helper.CargarCatalogo(dgvArticulos, lista);
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un filtro de búsqueda.");
+            }
+            txtBoxCriterio.Text = string.Empty;
+        }
+
     }
 }

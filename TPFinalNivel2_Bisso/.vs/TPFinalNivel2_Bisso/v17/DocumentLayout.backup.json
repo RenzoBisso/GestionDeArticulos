@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF2DA1-0F0D-403E-8D6F-B4A27282BFD4}|Helper\\Helper.csproj|C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6EF2DA1-0F0D-403E-8D6F-B4A27282BFD4}|Helper\\Helper.csproj|solutionrelative:helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|c:\\users\\renzo\\documents\\github\\gestiondearticulos\\tpfinalnivel2_bisso\\gestion de articulos\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|solutionrelative:gestion de articulos\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|c:\\users\\renzo\\documents\\github\\gestiondearticulos\\tpfinalnivel2_bisso\\gestion de articulos\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|solutionrelative:gestion de articulos\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|c:\\users\\renzo\\documents\\github\\gestiondearticulos\\tpfinalnivel2_bisso\\gestion de articulos\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|solutionrelative:gestion de articulos\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E43673BD-2CEC-44B5-8633-03E3558F2AED}|Base de datos\\Base de datos.csproj|C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\base de datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43673BD-2CEC-44B5-8633-03E3558F2AED}|Base de datos\\Base de datos.csproj|solutionrelative:base de datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|c:\\users\\renzo\\documents\\github\\gestiondearticulos\\tpfinalnivel2_bisso\\gestion de articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16436415-1ABA-4611-AB9A-65146AA6671D}|Gestion de articulos\\Gestion de articulos.csproj|solutionrelative:gestion de articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form3.cs",
+              "RelativeDocumentMoniker": "Gestion de articulos\\Form3.cs",
+              "ToolTip": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form3.cs",
+              "RelativeToolTip": "Gestion de articulos\\Form3.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvzYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T02:38:33.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form4.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form4.cs",
+              "RelativeDocumentMoniker": "Gestion de articulos\\Form4.cs",
+              "ToolTip": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form4.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion de articulos\\Form4.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T02:37:34.373Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form3.cs",
+              "RelativeDocumentMoniker": "Gestion de articulos\\Form3.cs",
+              "ToolTip": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion de articulos\\Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T02:37:32.551Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Helper\\Helper.cs",
+              "RelativeDocumentMoniker": "Helper\\Helper.cs",
+              "ToolTip": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Helper\\Helper.cs",
+              "RelativeToolTip": "Helper\\Helper.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T22:58:43.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form1.cs",
+              "RelativeDocumentMoniker": "Gestion de articulos\\Form1.cs",
+              "ToolTip": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Gestion de articulos\\Form1.cs",
+              "RelativeToolTip": "Gestion de articulos\\Form1.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T21:33:40.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Base de datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "Base de datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\renzo\\Documents\\GitHub\\GestionDeArticulos\\TPFinalNivel2_Bisso\\Base de datos\\Conexion.cs",
+              "RelativeToolTip": "Base de datos\\Conexion.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAwL4AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T21:01:38.949Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

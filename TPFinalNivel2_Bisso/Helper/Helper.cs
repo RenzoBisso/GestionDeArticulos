@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Modelos;
 using System.Windows.Forms;
 using Base_de_datos;
+using System.Data.SqlTypes;
 
 namespace Helper
 {
@@ -30,7 +31,21 @@ namespace Helper
             Conexion conexion = new Conexion();
             List<Articulo> lista = conexion.ListarArticulos();
             dgvArticulos.DataSource = lista;
-            dgvArticulos.Columns.RemoveAt(5);
+            dgvArticulos.Columns.RemoveAt(6);
+        }
+        public static void CargarCatalogo(DataGridView dgvArticulos,List<Articulo>lista)
+        {
+            Conexion conexion = new Conexion();
+            dgvArticulos.DataSource = lista;
+            dgvArticulos.Columns.RemoveAt(6);
+        }
+        public static void VerificarTxtBox(TextBox txtBox)
+        {
+            if (txtBox == null) 
+            {
+                txtBox.Text = (string)SqlString.Null;
+            }
+            
         }
 
     }
