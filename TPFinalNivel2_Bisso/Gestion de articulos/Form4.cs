@@ -53,17 +53,36 @@ namespace Gestion_de_articulos
         {
             Conexion conexion = new Conexion();
             Articulo articulo = new Articulo();
-
             Marca marca = new Marca();
             Categoria categoria = new Categoria();
-            articulo.Id = int.Parse(lblIdValor.Text);
-            articulo.CodigoArticulo=txtBoxCodigo.Text;
-            articulo.Descripcion=txtBoxDescripcion.Text;
+            try
+            {
+                articulo.Id = int.Parse(lblIdValor.Text);
+                articulo.CodigoArticulo = txtBoxCodigo.Text;
+                articulo.Descripcion = txtBoxDescripcion.Text;
+                articulo.Nombre = txtBoxNombre.Text;
+                articulo.Categoria = (Categoria)cboBoxCategoria.SelectedItem;
+                articulo.Marca = (Marca)cboBoxMarca.SelectedItem;
+                articulo.UrlImagen = txtBoxUrlImagen.Text;
+                bool esPrecioValido = Helper.Helper.VerificarTxtPrecio(txtBoxPrecio);
+                if (!esPrecioValido)
+                {
+                    return;
+                }
+                conexion.AgregarArticulo(articulo);
+
+                MessageBox.Show("Artículo agregado exitosamente.");
+                Close();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+            
             articulo.Precio=decimal.Parse(txtBoxPrecio.Text);
-            articulo.Nombre = txtBoxNombre.Text;
-            articulo.Categoria = (Categoria)cboBoxCategoria.SelectedItem;
-            articulo.Marca = (Marca)cboBoxMarca.SelectedItem;
-            articulo.UrlImagen=txtBoxUrlImagen.Text;
+            
 
             conexion.ModificarArticulo(articulo);
             Close();

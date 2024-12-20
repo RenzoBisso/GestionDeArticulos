@@ -35,11 +35,38 @@ namespace Gestion_de_articulos
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            Articulo articuloDetalle=(Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            formDetalle form = new formDetalle(articuloDetalle);
-            form.ShowDialog();
+            try
+            {
+                if (dgvArticulos.CurrentRow == null)
+                {
+                    MessageBox.Show("No hay un artículo seleccionado para ver detalle.");
+                    return;
+                }
 
+
+                    Conexion conexion = new Conexion();
+                    Articulo articuloDetalle = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    formDetalle form = new formDetalle(articuloDetalle);
+                    form.ShowDialog();
+
+                if (articuloDetalle == null)
+                    {
+                        MessageBox.Show("No se pudo obtener el artículo seleccionado.");
+                        return;
+                    }
+
+                    Helper.Helper.CargarCatalogo(dgvArticulos);
+                
+            }
+            catch (Exception ex)
+            {
+                // Muestra un mensaje de error en lugar de relanzar la excepción
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
+        
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -48,12 +75,33 @@ namespace Gestion_de_articulos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Estas seguro de eliminarlo?","Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            try
             {
-                Conexion conexion = new Conexion();
-                Articulo articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                conexion.EliminarArticulo(articulo);
-                Helper.Helper.CargarCatalogo(dgvArticulos);
+                if (dgvArticulos.CurrentRow == null)
+                {
+                    MessageBox.Show("No hay un artículo seleccionado para eliminar.");
+                    return;
+                }
+
+                if (MessageBox.Show("¿Estás seguro de eliminarlo?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    Conexion conexion = new Conexion();
+                    Articulo articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+                    if (articulo == null)
+                    {
+                        MessageBox.Show("No se pudo obtener el artículo seleccionado.");
+                        return;
+                    }
+
+                    conexion.EliminarArticulo(articulo);
+                    Helper.Helper.CargarCatalogo(dgvArticulos);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Muestra un mensaje de error en lugar de relanzar la excepción
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -66,10 +114,37 @@ namespace Gestion_de_articulos
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            Articulo articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            Modificar form = new Modificar(articulo);
-            form.ShowDialog(this);
-            Helper.Helper.CargarCatalogo(dgvArticulos);
+
+            try
+            {
+                if (dgvArticulos.CurrentRow == null)
+                {
+                    MessageBox.Show("No hay un artículo seleccionado para ver detalle.");
+                    return;
+                }
+
+
+
+                Articulo articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                Modificar form = new Modificar(articulo);
+                form.ShowDialog(this);
+                Helper.Helper.CargarCatalogo(dgvArticulos);
+
+                if (articulo == null)
+                {
+                    MessageBox.Show("No se pudo obtener el artículo seleccionado.");
+                    return;
+                }
+
+                Helper.Helper.CargarCatalogo(dgvArticulos);
+
+            }
+            catch (Exception ex)
+            {
+                // Muestra un mensaje de error en lugar de relanzar la excepción
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void txtBoxCriterio_TextChanged(object sender, EventArgs e)

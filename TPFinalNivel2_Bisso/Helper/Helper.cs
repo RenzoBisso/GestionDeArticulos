@@ -7,6 +7,7 @@ using Modelos;
 using System.Windows.Forms;
 using Base_de_datos;
 using System.Data.SqlTypes;
+using System.Drawing;
 
 namespace Helper
 {
@@ -39,13 +40,20 @@ namespace Helper
             dgvArticulos.DataSource = lista;
             dgvArticulos.Columns.RemoveAt(6);
         }
-        public static void VerificarTxtBox(TextBox txtBox)
+        public static bool VerificarTxtPrecio(TextBox txtBox)
         {
-            if (txtBox == null) 
+            // Intentar convertir el texto a un número decimal
+            if (decimal.TryParse(txtBox.Text, out decimal precio) && precio > 0)
             {
-                txtBox.Text = (string)SqlString.Null;
+                txtBox.BackColor = Color.White; // Restablecer el fondo si el valor es válido
+                return true;
             }
-            
+            else
+            {
+                txtBox.BackColor = Color.Red; // Cambiar el fondo a rojo si es inválido
+                MessageBox.Show("Debe ingresar un precio válido");
+                return false;
+            }
         }
 
     }

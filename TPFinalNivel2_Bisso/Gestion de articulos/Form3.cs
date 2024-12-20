@@ -27,16 +27,34 @@ namespace Gestion_de_articulos
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Conexion conexion = new Conexion();
-            Articulo articulo = new Articulo(); 
-            articulo.Nombre=txtBoxNombre.Text;
-            articulo.UrlImagen=txtBoxUrlImagen.Text;
-            articulo.CodigoArticulo=txtBoxCodigo.Text;
-            articulo.Descripcion=txtBoxDescripcion.Text;
-            articulo.Precio=decimal.Parse(txtBoxPrecio.Text);
-            articulo.Categoria = (Categoria)cboBoxCategoria.SelectedItem;
-            articulo.Marca=(Marca)cboBoxMarca.SelectedItem;
-            conexion.AgregarArticulo(articulo);
-            Close();
+            Articulo articulo = new Articulo();
+
+            try
+            {
+                articulo.Nombre = txtBoxNombre.Text;
+                articulo.UrlImagen = txtBoxUrlImagen.Text;
+                articulo.CodigoArticulo = txtBoxCodigo.Text;
+                articulo.Descripcion = txtBoxDescripcion.Text;
+
+                bool esPrecioValido = Helper.Helper.VerificarTxtPrecio(txtBoxPrecio);
+                if (!esPrecioValido)
+                {
+                    return;
+                }
+                articulo.Precio = decimal.Parse(txtBoxPrecio.Text);
+
+                articulo.Categoria = (Categoria)cboBoxCategoria.SelectedItem;
+                articulo.Marca = (Marca)cboBoxMarca.SelectedItem;
+
+                conexion.AgregarArticulo(articulo);
+
+                MessageBox.Show("Artículo agregado exitosamente.");
+                Close();
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void Agregar_Load(object sender, EventArgs e)
